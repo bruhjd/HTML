@@ -9,25 +9,54 @@
 
 <body>
     <h2>Form tutorial</h2>
-    <form action="">
+    <form action="backend.php">
         <div>
-            <strong> Name:</strong> <input type="text" name="my name" placeholder="enter your name">
+            <label for="name"><strong> Name:</strong> </label>
+            <input type="text" name="my name" id="name" placeholder="enter your name">
         </div>
         <br>
         <div>
-            <strong>Address:</strong> <input type="text" name="my address" placeholder="current addess">
+            <label for="address"><strong>Address:</strong></label>
+            <input type="text" name="my address" id="address" placeholder="current addess">
         </div>
         <br>
         <div>
-            <strong>Contact no:</strong><input type="number" name="ny number" placeholder="phone number">
+            <label for="phone number"><strong>Contact no:</strong></label>
+            <input type="number" name="ny number" id="phone number" placeholder="phone number">
         </div>
         <br>
         <div>
-            <strong>Email:</strong> <input type="email" name="my email" id="" placeholder="example@gmail.com">
+            <label for="email"><strong>Email:</strong></label>
+            <input type="email" name="my email" id="email" placeholder="example@gmail.com">
         </div>
         <br>
         <div>
-            <input type="button" style="background-color:antiquewhite;" value="Submit">
+            <label for="dob"><strong>DOB:</strong></label>
+            <input type="date" name="date" id="dob">
+        </div>
+        <br>
+        <div>
+            <label for="eligible"><strong>Are you elegible?:</strong></label>
+            <input type="checkbox" name="eligiblity" id="eligible">
+        </div>
+        <br>
+        <div>
+            <label for="remarks"><strong> Yours remarks</strong></label>
+            <br><textarea name="Remarks" id="remarks" cols="30" rows="3">Remarks</textarea>
+        </div>
+        <br>
+        <div>
+            <strong>Gender:</strong><label for="male">Male</label>
+            <input type="radio" id="male" name="gender">
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender">
+            <label for="other">Other</label>
+            <input type="radio" id="other" name="gender">
+        </div>
+        <br>
+        <div>
+            <input type="button" value="Submit">
+            <input type="button" value="Reset">
         </div>
     </form>
 </body>
